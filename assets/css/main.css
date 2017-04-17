@@ -40,7 +40,7 @@ a{
 
 }
 
-.panda1, .panda2, .panda3, .panda4{
+.panda{
   position: relative;
   display: inline-block;
   width: 22%;

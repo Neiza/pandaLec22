@@ -8,7 +8,9 @@ var span3 = document.getElementById("span3");
 var span4 = document.getElementById("span4");
 var origen = document.getElementById("origen");
 var extension = document.getElementById("extension");
-var eliminar =  document.getElementById("eliminar");
+var restaurar =  document.getElementById("restaurar");
+var origenParraf = document.getElementsByClassName("origen");
+var extinParraf = document.getElementsByClassName("extin");
 
 
 
@@ -24,4 +26,23 @@ span3.addEventListener("click", function(){
 });
 span4.addEventListener("click", function(){
       panda4.style.display = "none";
+});
+origen.addEventListener("click", function(){
+  for (var i =0; i<origenParraf.length; i++){
+    origenParraf[i].classList.toggle("show");
+  }
+});
+
+extension.addEventListener("click", function(){
+  for (var i =0; i<extinParraf.length; i++){
+    extinParraf[i].classList.toggle("show");
+  }
+});
+
+restaurar.addEventListener("click", function(){
+  panda1.style.display = "inline-block";
+  panda2.style.display = "inline-block";
+  panda3.style.display = "inline-block";
+  panda4.style.display = "inline-block";
+
 });

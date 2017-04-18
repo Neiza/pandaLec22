@@ -17,17 +17,6 @@ function closeImg(){
     }
 }
 
-/*function textVisibility(){
-    for(var i=0; i<menu.length; i++){
-        menu[i].addEventListener("click",function(event){
-          event.preventDefault();
-          for(var j=0; j<origenParraf.length; j++){
-              this.parentNode.classList.toggle("show");
-          }
-        });
-    }
-}*/
-
 function rest(){
     for(var i=0; i<panda.length; i++){
         panda[i].style.display = "inline-block";
@@ -36,7 +25,6 @@ function rest(){
 
 window.addEventListener("load", function(){
       closeImg();
-    //  textVisibility();
       restaurar.addEventListener("click", function(event){
           event.preventDefault();
           rest();
